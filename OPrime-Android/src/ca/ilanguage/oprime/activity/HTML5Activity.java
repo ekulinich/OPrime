@@ -60,6 +60,8 @@ public abstract class HTML5Activity extends Activity {
   public WebView mWebView;
   protected String mWebAppBaseDir;
   protected String logs;
+  public String mDeviceDetails = "{}";
+
 
   /** Called when the activity is first created. */
   @Override

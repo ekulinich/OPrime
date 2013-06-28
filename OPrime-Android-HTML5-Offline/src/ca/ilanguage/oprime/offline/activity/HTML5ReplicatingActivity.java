@@ -81,8 +81,8 @@ public abstract class HTML5ReplicatingActivity extends HTML5Activity {
   protected String mUsersPage = "file:///android_asset/release/user.html";
 
   // ektorp impl
-  protected CouchDbInstance dbInstance;
-  protected CouchDbConnector couchDbConnector;
+  public CouchDbInstance dbInstance;
+  public CouchDbConnector couchDbConnector;
   protected ReplicationCommand pushReplicationCommand;
   protected ReplicationCommand pullReplicationCommand;
 

@@ -642,7 +642,8 @@ public abstract class JavaScriptInterface implements Serializable,
       mDeviceDetails = new DeviceDetails(getUIParent(), D, TAG);
     }
     String deviceType = mDeviceDetails.getCurrentDeviceDetails();
-
+    getUIParent().mDeviceDetails = deviceType;
+    
     LoadUrlToWebView v = new LoadUrlToWebView();
     v.setMessage("javascript:OPrime.hub.publish('hardwareDetails',"
         + deviceType + ");");
